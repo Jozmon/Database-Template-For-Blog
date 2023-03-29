@@ -118,7 +118,7 @@ post_id       | int fk_key NL
 
 tbl_comments
 -------------------------------------
-id_sxoliou      | int primary_key NL
+comment_id      | int primary_key NL
 visitors_ipv4   | varchar(15) NL
 comment_body    | varchar(1000) NL
 post_id         | int fk_key NL
