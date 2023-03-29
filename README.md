@@ -100,60 +100,60 @@ and to make sure there will be no confusion.
 ### Table representation
 <pre>
 
-tbl_arthra
+tbl_posts
 -------------------------------------
-id_arthrou      | int primary_key
-titlos_arthrou  | varchar(70)
-keimeno_arthou  | varchar(10000)
+post_id        | int primary_key
+post_title     | varchar(70)
+post_textbody  | varchar(10000)
 <br>
 
 
-tbl_eikones_arthrou
+tbl_post_images
 -------------------------------------
-id_eikonas      | int
-path_eikonas    | varchar
-id_arthrou      | int fk_key
+image_id      | int
+image_path    | varchar
+post_id       | int fk_key
 <br>
 
 
-tbl_sxolia
+tbl_comments
 -------------------------------------
 id_sxoliou      | int primary_key
-ipv4_sxoliasti  | varchar(15)
-keimeno         | varchar(1000)
-id_arthrou      | int fk_key
+visitors_ipv6   | varchar(15)
+comment_body    | varchar(1000)
+post_id.        | int fk_key
 <br>
 
 
-tbl_xristes
+tbl_users
 -------------------------------------
-id_xristi            | int primary_key
-kodikos              | varchar
+user_id              | int primary_key
+password             | varchar
 email                | varchar
-arithmos             | numeric
-hmerominia_geniseis  | date
-id_rolou             | int     fk_key
+phonenumber          | numeric
+birthdate            | date
+role_id              | int     fk_key
 <br>
 
-tbl_rolou
+tbl_roles
 -------------------------------------
-id_rolou         | int primary_key
-onoma_rolou      | varchar(70)
-perigrafi_rolou  | varchar(1000)
+role_id           | int primary_key
+rolename          | varchar(70)
+role_description  | varchar(1000)
 <br>
 
-tbl_katigories
+tbl_categories
 -------------------------------------
-id_katigorias        | int
-onoma_katigorias     | varchar
-id_yperkatigorias    | int fk_key
+category_id         | int
+category_name       | varchar
+supercategory_id    | int fk_key
 <br>
 
 
-tbl_yperkatigories
+tbl_supercategory
 -------------------------------------
-id_yperkatigorias    | int
-onoma_yperkatigorias | varchar
+supercategory_id    | int
+supercategory_name | varchar
 
 </pre>
 
