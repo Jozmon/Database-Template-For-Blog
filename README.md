@@ -22,13 +22,16 @@
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
-  
+
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Naming">Naming</a>
+    </li>
+    <li>
+      <a href="#Table Representation">Table Representation</a>
     </li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -50,65 +53,108 @@
 <br>
 <br>
 
-A database made for a fashion blog
-
-which will contain the following entities and attributes:
 
 <br>
 <br>
 <br>
-<br>
-<br>
+
+
 
 <pre>
-Tbl_Arthra
--------------------------------------
-ID Arthrou      |int primary_key
-Titlos Arthrou  |varchar(70)
-Keimeno Arthou  |varchar(10000)
+Each user has his details plus the attribute "role_id" 
+which allows the admin to select between different roles 
+using the foreign_key from entity roles.
+
+To give each user a role, the attribute "role_id" was used.
+Which can have the following options (Administrator, Moderator, 
+Arthografos and Aplos Xristis).
+
+For a user to have the role of the administrator the value 0 must choosen
+which correspond in table "tbl_role" role 0 with Name:Administrator
+
+Users will write articles using the attribute "id_arthografou"
+in table "tbl_posts" to the corresponding "user_id" 
+in the table "tbl_users".
+
+It will have the following tables, features and their properties.
+
+</pre>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+### Naming
+<pre>
+We used "tbl-" at the beginning of each each entity's name to make their
+difference clear in relation to the attributes.
+
+Naming was done in lower case for better compatibility
+and to make sure there will be no confusion.
+</pre>
 <br>
 
 
-Tbl_Eikones_Arthrou
+<!-- TBL_PRESENT -->
+### Table representation
+<pre>
+
+tbl_arthra
 -------------------------------------
-ID Eikonas      |int
-Path Eikonas    |varchar
-ID Arthrou      |int fk_key
+id_arthrou      | int primary_key
+titlos_arthrou  | varchar(70)
+keimeno_arthou  | varchar(10000)
 <br>
 
 
-Tbl_Sxolia
+tbl_eikones_arthrou
 -------------------------------------
-ID Sxoliou      |int primary_key
-IPv4 Sxoliasti  |varchar(15)
-Keimeno         |varchar(1000)
-ID Arthrou      |int fk_key
+id_eikonas      | int
+path_eikonas    | varchar
+id_arthrou      | int fk_key
 <br>
 
 
-Tbl_Xristes
+tbl_sxolia
 -------------------------------------
-ID Xristi            |int primary_key
-Kodikos              |varchar
-Email                |varchar
-Arithmos             |numeric
-Hmerominia Geniseis  |date
-ID Rolou             |int     fk_key
+id_sxoliou      | int primary_key
+ipv4_sxoliasti  | varchar(15)
+keimeno         | varchar(1000)
+id_arthrou      | int fk_key
 <br>
 
 
-Tbl_Katigories
+tbl_xristes
 -------------------------------------
-ID Katigorias        |int
-Onoma Katigorias     |varchar
-ID Yperkatigorias    |int fk_key
+id_xristi            | int primary_key
+kodikos              | varchar
+email                | varchar
+arithmos             | numeric
+hmerominia_geniseis  | date
+id_rolou             | int     fk_key
+<br>
+
+tbl_rolou
+-------------------------------------
+id_rolou         | int primary_key
+onoma_rolou      | varchar(70)
+perigrafi_rolou  | varchar(1000)
+<br>
+
+tbl_katigories
+-------------------------------------
+id_katigorias        | int
+onoma_katigorias     | varchar
+id_yperkatigorias    | int fk_key
 <br>
 
 
-Tbl_Yperkatigories
+tbl_yperkatigories
 -------------------------------------
-ID Yperkatigorias    | int
-Onoma Yperkatigorias | varchar
+id_yperkatigorias    | int
+onoma_yperkatigorias | varchar
 
 </pre>
 
@@ -148,5 +194,3 @@ Project Link: - [https://github.com/Jozmon/shitbox][repo-link]
 <!-- MARKDOWN LINKS & IMAGES -->
 [product-screenshot]: images/screenshot.png
 [repo-link]: https://github.com/Jozmon/shitbox
-
-
