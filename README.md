@@ -60,25 +60,25 @@
 
 
 
-<pre>
-Each user has his details plus the attribute "role_id" 
-which allows the admin to select between different roles 
-using the foreign_key from entity roles.
 
-To give each user a role, the attribute "role_id" was used.
-Which can have the following options (Administrator, Moderator, 
-Arthografos and Aplos Xristis).
+Each user has his details plus the attribute "role_id" <br>
+which allows the admin to select between different roles <br>
+using the foreign_key from entity roles.<br>
 
-For a user to have the role of the administrator the value 0 must choosen
-which correspond in table "tbl_role" role 0 with Name:Administrator
+To give each user a role, the attribute "role_id" was used.<br>
+Which can have the following options (Administrator, Moderator, <br>
+Arthografos and Aplos Xristis).<br>
 
-Users will write articles using the attribute "id_arthografou"
-in table "tbl_posts" to the corresponding "user_id" 
-in the table "tbl_users".
+For a user to have the role of the administrator the value 0 must choosen<br>
+which correspond in table "tbl_role" role 0 with Name:Administrator<br>
 
-It will have the following tables, features and their properties.
+Users will write articles using the attribute "id_arthografou"<br>
+in table "tbl_posts" to the corresponding "user_id" <br>
+in the table "tbl_users".<br>
 
-</pre>
+It will have the following tables, features and their properties.<br>
+
+
 
 <br>
 <br>
@@ -87,15 +87,15 @@ It will have the following tables, features and their properties.
 <br>
 
 ### Naming
-<pre>
-We used "tbl-" at the beginning of each each entity's name to make their
-difference clear in relation to the attributes.
 
-Naming was done in lower case for better compatibility
-and to make sure there will be no confusion.
-</pre>
+We used "tbl-" at the beginning of each each entity's name to make their<br>
+difference clear in relation to the attributes.<br>
+
+Naming was done in lower case for better compatibility<br>
+and to make sure there will be no confusion.<br>
+
 <br>
-
+<br>
 
 <!-- TBL_PRESENT -->
 ### Table representation
