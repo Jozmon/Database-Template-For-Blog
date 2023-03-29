@@ -102,58 +102,58 @@ and to make sure there will be no confusion.
 
 tbl_posts
 -------------------------------------
-post_id        | int primary_key
-post_title     | varchar(70)
-post_textbody  | varchar(10000)
+post_id        | int primary_key NL
+post_title     | varchar(70) NL
+post_textbody  | varchar(10000) NL
 <br>
 
 
 tbl_post_images
 -------------------------------------
-image_id      | int
-image_path    | varchar
-post_id       | int fk_key
+image_id      | int primary_key NL
+image_path    | varchar NL
+post_id       | int fk_key NL
 <br>
 
 
 tbl_comments
 -------------------------------------
-id_sxoliou      | int primary_key
-visitors_ipv6   | varchar(15)
-comment_body    | varchar(1000)
-post_id.        | int fk_key
+id_sxoliou      | int primary_key NL
+visitors_ipv4   | varchar(15) NL
+comment_body    | varchar(1000) NL
+post_id         | int fk_key NL
 <br>
 
 
 tbl_users
 -------------------------------------
-user_id              | int primary_key
-password             | varchar
-email                | varchar
+user_id              | int primary_key NL
+password             | varchar NL
+email                | varchar NL
 phonenumber          | numeric
-birthdate            | date
-role_id              | int     fk_key
+birthdate            | date NL
+user_role_id         | int NL fk_key
 <br>
 
 tbl_roles
 -------------------------------------
-role_id           | int primary_key
-rolename          | varchar(70)
-role_description  | varchar(1000)
+role_id           | int primary_key NL
+rolename          | varchar(70) NL
+role_description  | varchar(1000) NL
 <br>
 
 tbl_categories
 -------------------------------------
-category_id         | int
-category_name       | varchar
-supercategory_id    | int fk_key
+category_id         | int NL
+category_name       | varchar NL
+supercategory_id    | int fk_key NL
 <br>
 
 
-tbl_supercategory
+tbl_supercategories
 -------------------------------------
-supercategory_id    | int
-supercategory_name | varchar
+supercategory_id    | int primary_key NL
+supercategory_name  | varchar NL
 
 </pre>
 
