@@ -97,7 +97,7 @@ and to make sure there will be no confusion.
 <br>
 
 <!-- TBL_PRESENT -->
-### Table representation
+### Table Representation
 <pre>
 
 tbl_posts
