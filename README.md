@@ -186,6 +186,9 @@ Project Link: - [https://github.com/Jozmon/shitbox][repo-link]
 ## Acknowledgments
 
 * [Giannis Kekes](micron00@mail.com)
+* [Inki](tzaferisleonidas@gmail.com)
+* [Theodosis Tsiavos](theotsiavos92@gmail.com)
+* [Alexandra](unknown@example.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
