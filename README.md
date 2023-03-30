@@ -52,7 +52,7 @@
 <br>
 <br>
 <br>
-
+A database to be used in blog or news website.
 
 <br>
 <br>
