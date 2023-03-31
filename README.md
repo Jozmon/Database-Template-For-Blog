@@ -144,11 +144,16 @@ role_description  | varchar(1000) NL
 
 tbl_categories
 -------------------------------------
-category_id         | int NL
+category_id         | int primary_key NL
 category_name       | varchar NL
-supercategory_id    | int fk_key NL
 <br>
 
+
+tbl_categories_supercategories
+-------------------------------------
+category_id         | int primary_key fk_key NL
+supercategory_id    | int primary_key fk_key NL
+<br>
 
 tbl_supercategories
 -------------------------------------
