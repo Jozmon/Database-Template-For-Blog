@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Jozmon/ip-dec2bin-private">
+  <a href="https://github.com/Jozmon/db-template-for-blog">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
