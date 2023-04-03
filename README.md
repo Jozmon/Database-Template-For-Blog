@@ -12,7 +12,8 @@
     <br>
     this database is made to meet the fashion's blog requirements
     <br />
-    <br />
+    
+   
 
   </p>
 </div>
@@ -44,6 +45,15 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+<p align="left"> This an educational project made by our Team , in order to experiment and practice with Data Base Planning.<br>
+      The assignment was requested as part of our class at Data Base Engineering by our professor Mr.Kapelas.<br>
+      Our aim is to create a sample database module useful both for students and professionals that could be used for future projects in general.<br>
+      For any feedback or suggestions on improving you can find our contact details below<br> <p/>
+      
+ <br>
+ <br>
+ <br>
 
 ![Product Name Screen Shot][product-screenshot]
 
@@ -98,6 +108,65 @@ and to make sure there will be no confusion.
 
 <!-- TBL_PRESENT -->
 ### Table Representation
+
+<p>
+Below is a detailed explanation of the various relationships between the objects of the database.
+
+We can identify 8 distinct objective entities that will be represented as tables in our database:
+
+1) Posts that are submitted by users , can have images and comments , and are separated firstly in supecategories and secondly in categories.
+                 
+ - The association here is one-to-many between the user and the post , as a user can post multiple content.
+ - Images and comments association with the post is one-to-many as well as a post can have multiple comments and images
+
+2) Users that have roles and can submit posts like articles.
+  
+3) Roles that determine the user's accesses and capabilities.
+ - The association between the user and its role is one to many between the user and the role as a user can have multiple rules(Can be an admin and an author at the same time)
+
+4) Post Images that are paired with a post.
+ 
+5) Comments that are paired with a post.
+- An one-to-many association between the post  and the image or the comment , as posts can have multiple data.
+
+6) Categories that will separate posts into one of each.
+  
+7) Categories_Supercategories that will merge categories into bigger ones   
+  
+8) Supercategory that will define which will be the available supercatogories
+
+ - The association between the categories and supercategories is many-to-many as multiple values can be assigned to both , so a middle option called Categories_Supercategories is used with a one-to-many association between category and Categories_Supercategories as a category will have a single place to the other table
+          
+- Additionally a table called Supercategory is used with a one-to-many association between supercategory and Categories_Supercategories where a supercategory will have a single place.
+            <br></p>
+
+<h4> About Roles and Posts</h4>
+ Roles represent the status of the user regarding the blog (An author,a visitor or an administrator for example) as well as the expected behaviour.
+ A user with the role name 'Author' can post an article , and at the same time a user that has logged in as a guest can post a comment about an article<br>
+ Post are the actual content of the database , including the articles , pictures and comments
+ Post are separated into categories and supercategories to streamline user navigation and enchance the user's experience in general.For example
+ an article could be in a category called 'Shirts' which will at the same time belong to a supercategory called 'Men's Wear'<br>
+            
+<h4>Regarding key distribution</h4>
+            
+<p>Regarding key distribution that will be used during the setting-up of the base we will add the following:
+
+  About posts
+
+ - The posts table will have a column row called post_id as a primary key
+ - The images and comments tables will have rows named image_id and comment_id respectively while at the same time they will have rows called post_id as a foreign key so that   the tables may be associated as described above
+
+  With the same logic we go on about roles and users
+
+- Roles table will have a row called role_id as a primary key
+- Users will have a row called user_id a primary key and at the same time a row called role_id as foreign key
+
+ And about categories and supercategories
+
+- They will have rows called category_id and supercategory_id as primary keys and at the same time Categories_Supercategories table will have two rows called
+category_id and supercategory_id which will be used both a primary key and foreign key<br><p/>
+
+<p>Below we see the actual table representation:<p/>
 <pre>
 
 tbl_posts
