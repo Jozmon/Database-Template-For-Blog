@@ -116,7 +116,7 @@ We can identify 8 distinct objective entities that will be represented as tables
 
 1) Posts that are submitted by users , can have images and comments , and are categorized firstly in categories and the categories are categorized in supecategories.
                  
- - The association here is one-to-many between the user and the post , as a user can post multiple content.
+-- The association here is one-to-many between the user and the post , as a user can post multiple content.
  - Images and comments association with the post is one-to-many as well as a post can have multiple comments and images
 
 2) Users that have roles and can submit posts like articles.
