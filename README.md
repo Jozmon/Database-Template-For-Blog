@@ -147,19 +147,17 @@ We can identify 8 distinct objective entities that will be represented as tables
             
 <p>Regarding key distribution that will be used during the setting-up of the base we will add the following:
 
-  About posts
+- About posts
 
- - The posts table will have a column row called post_id as a primary key
- - The images and comments tables will have rows named image_id and comment_id respectively while at the same time they will have rows called post_id as a foreign key so that   the tables may be associated as described above
+   * The posts table will have a column row called post_id as a primary key
+   * The images and comments tables will have rows named image_id and comment_id respectively while at the same time they will have rows called post_id as a foreign key so that   the tables may be associated as described above
 
-  With the same logic we go on about roles and users
+- With the same logic we go on about roles and users
+   * Roles table will have a row called role_id as a primary key
+   * Users will have a row called user_id a primary key and at the same time a row called role_id as foreign key
 
-- Roles table will have a row called role_id as a primary key
-- Users will have a row called user_id a primary key and at the same time a row called role_id as foreign key
-
- And about categories and supercategories
-
-- They will have rows called category_id and supercategory_id as primary keys and at the same time Categories_Supercategories table will have two rows called
+- About categories and supercategories
+   * They will have rows called category_id and supercategory_id as primary keys and at the same time Categories_Supercategories table will have two rows called
 category_id and supercategory_id which will be used both a primary key and foreign key<br><p/>
 
 <p>Below we see the actual table representation:<p/>
