@@ -114,28 +114,26 @@ Below is a detailed explanation of the various relationships between the objects
 We can identify 8 distinct objective entities that will be represented as tables in our database:
 
 1) Posts that are submitted by users , can have images and comments , and are categorized firstly in categories and the categories are categorized in supecategories.            
- - The association here is one-to-many between the user and the post , as a user can post multiple content.
- - Images and comments association with the post is one-to-many as well as a post can have multiple comments and images
+   * The association here is one-to-many between the user and the post , as a user can post multiple content.
+   * Images and comments association with the post is one-to-many as well as a post can have multiple comments and images
 
 2) Users that have roles and can submit posts like articles.
   
 3) Roles that determine the user's accesses and capabilities.
- - The association between the user and its role is one to many between the user and the role as a user can have multiple roles(Can be an admin and an author at the same time)
+   * The association between the user and its role is one to many between the user and the role as a user can have multiple roles(Can be an admin and an author at the same time)
 
 4) Post Images are paired with a post.
  
 5) Comments are paired with a post.
-- An one-to-many association between the post  and the image or the comment , as posts can have multiple data.
+   * An one-to-many association between the post  and the image or the comment , as posts can have multiple data.
 
 6) Categories that will separate posts into one of each.
   
 7) Categories_Supercategories that will merge categories into bigger ones   
   
 8) Supercategory that will define which will be the available supercatogories
-
- - The association between the categories and supercategories is many-to-many as multiple values can be assigned to both , so a middle option called Categories_Supercategories is used with a one-to-many association between category and Categories_Supercategories as a category will have a single place to the other table
-          
-- Additionally a table called Supercategory is used with a one-to-many association between supercategory and Categories_Supercategories where a supercategory will have a single place.
+   * The association between the categories and supercategories is many-to-many as multiple values can be assigned to both , so a middle option called Categories_Supercategories is used with a one-to-many association between category and Categories_Supercategories as a category will have a single place to the other table       
+   * Additionally a table called Supercategory is used with a one-to-many association between supercategory and Categories_Supercategories where a supercategory will have a single place.
             <br></p>
 
 <h4> About Roles and Posts</h4>
