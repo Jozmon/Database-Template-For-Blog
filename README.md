@@ -8,9 +8,9 @@
   <h3 align="center">Database Template For Blog</h3>
 
   <p align="center">
-    A database for a fashion blog
+    A database template for a web blog
     <br>
-    this database is made to meet the fashion's blog requirements
+    this database is made to meet the requirements of a web blog.
     <br />
     <br />
 
