@@ -57,8 +57,7 @@
 
 ![Product Name Screen Shot][product-screenshot]
 
-<br>
-<br>
+
 <br>
 <br>
 <br>
