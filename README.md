@@ -244,7 +244,7 @@ Distributed under the GPL License. See `LICENSE.txt` for more information.
 
 Giannis Kekes - micron00@mail.com
 
-Project Link: - [https://github.com/Jozmon/shitbox][repo-link]
+Project Link: - [https://github.com/Jozmon/Database-Template-For-Blog][repo-link]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
